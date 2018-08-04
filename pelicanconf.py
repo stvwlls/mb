@@ -25,7 +25,7 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = 10
 
 FILENAME_METADATA = '(?P<slug>.*)_(?P<date>\d{4}-\d{2}-\d{2})'
-STATIC_PATHS = ['images/site', 'images/logos', 'extra/favicon.ico', 'css/fonts']
+STATIC_PATHS = ['images', 'extra/favicon.ico', 'css/fonts']
 EXTRA_PATH_METADATA = {
         'extra/favicon.ico': {'path': 'favicon.ico'},
         }

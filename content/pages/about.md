@@ -5,6 +5,8 @@ TITLEMETA: Mindful Building is a contruction and renovation company based in Sou
 
 Mindful Building is a construction and renovation company based in Southern Maine. We build everything from simple additions to custom homes. We are versatile, highly skilled builders with over one hundred years combined experience. Mindful Building holds its clients' values and requirements in the utmost esteem. Through consciensious attention to detail and continuous communication with clients, Mindful Building makes dreams reality.
 
+<img alt="Patrick Landers, owner of Mindful Building" class="about__headshot" src="/images/patrick.jpg">
+
 Patrick Landers, owner and lead carpenter of Mindful Building, answers frequent questions about the company.
 
 __How long have you been in business?__

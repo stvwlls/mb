@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block tags %}
     {% endblock %}
-    {% assets filters="cssmin", output="css/style.min.css", "css/reset.css", "css/base.css", "css/main.css", "css/home.css", "css/article.css", "css/page.css", "css/header.css", "css/gallery.css" %}
+    {% assets filters="cssmin", output="css/style.min.css", "css/reset.css", "css/base.css", "css/main.css", "css/home.css", "css/article.css", "css/page.css", "css/gallery.css" %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
     {% if (article and article.photo_gallery) or (articles_page and articles_page.object_list[0].photo_gallery) %}
@@ -23,9 +23,9 @@
     {% endblock head %}
       <style>
       {% if page and page.slug == "home" %}
-            {% include "splash.css" %}
+          {% include "splash.css" %}
       {% else %}
-            {% include "header.css" %}
+          {% include "header.css" %}
       {% endif %}
       </style>
   </head>
@@ -45,7 +45,7 @@
     </div>
     #}
     <header class="page-header">
-      <a class="logo-link" href="{{ SITEURL }}/"><img class="logo" src="/images/site/logo.png"></a>
+      <a class="logo-link" href="{{ SITEURL }}/"><img class="logo" src="/images/logo.png"></a>
       <nav class="menu">
         <!--
           <input type="checkbox" id="menu-checkbox">

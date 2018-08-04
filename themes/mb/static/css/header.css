@@ -19,6 +19,11 @@
 .logo {
     display: block;
 }
+.menu {
+  font-size: 1.2em;
+  margin-top: 1em;
+  text-align: center;
+}
 .menu-link {
     border-bottom: 1px solid transparent;
 }
@@ -39,19 +44,8 @@
     border-bottom-color: #6f983d;
     color: #6f983d;
 }
-.page-title {
 
 @media screen and (min-width: 500px) {
-  .menu-list {
-  }
 }
 @media screen and (min-width: 1000px) {
-
-    .page-header {
-    }
-    nav {
-    }
-    #menu-checkbox, .menu-heading {
-        display: none;
-    }
 }

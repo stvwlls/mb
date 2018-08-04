@@ -26,6 +26,10 @@ form.contact > textarea {
   height: 8em;
 }
 @media screen and (min-width: 750px) {
+  .about__headshot {
+    float: right;
+    margin: 0 0 20px;
+  }
   form.contact {
     margin: 0 auto;
     max-width: 600px;
