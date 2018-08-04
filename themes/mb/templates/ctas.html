@@ -1,0 +1,39 @@
+<div class="ctas">
+    {% if page and page.slug != "siding" %}
+    <a class="cta" href="/siding">
+        <div class="cta-text">
+            <h2 class="cta-heading">Siding!</h2>
+            <p class="cta-body">Oceanside installs a wide range of siding materials.</p>
+        </div>
+        {% include 'images/right-arrow.svg' %}
+    </a>
+    {% endif %}
+    {% if page and page.slug != "roofing" %}
+    <a class="cta" href="/roofing">
+        <div class="cta-text">
+            <h2 class="cta-heading">Roofing</h2>
+            <p class="cta-body">Let Oceanside put all of your roof worries to rest.</p>
+        </div>
+        {% include 'images/right-arrow.svg' %}
+    </a>
+    {% endif %}
+    {% if page and page.slug != "windows" %}
+    <a class="cta" href="/windows">
+        <div class="cta-text">
+            <h2 class="cta-heading">Windows</h2>
+            <p class="cta-body">Oceanside installs and replaces all types of windows.</p>
+        </div>
+        {% include 'images/right-arrow.svg' %}
+    </a>
+    {% endif %}
+    {% if page and page.slug != "roofing" %}
+    <a class="cta" href="/roofing">
+        <div class="cta-text">
+            <h2 class="cta-heading">Ice Dam Removal</h2>
+            <p class="cta-body">Oceanside works all winter to keep your roof in good shape.</p>
+        </div>
+        {% include 'images/right-arrow.svg' %}
+    </a>
+    {% endif %}
+</div>
+

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block masthead %}
+<div class="page-title">
+        <h1>Projects</h1>
+</div>
+{% endblock %}
+{% block content %}
+<div class="content body-content">
+<ul class="post-list">
+{% for article in articles_page.object_list %}
+        <li class="post-entry">
+           {% if article.photo_image %}<img class="post-entry-image" src="{{ SITEURL }}/{{ article.photo_image[2] }}" />{% endif %}
+            <article class="post-entry-text">
+                <header> <h3 class="post-entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3> </header>
+                <div class="post-entry-content"> {{ article.summary }} <a href="{{ SITEURL }}/{{ article.url }}">Read more</a> </div><!-- /.entry-content -->
+        </article></li>
+{% endfor %}
+</ol><!-- /#posts-list -->
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+</div><!-- /#content -->
+{% endblock content %}

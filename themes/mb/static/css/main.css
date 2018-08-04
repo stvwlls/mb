@@ -1,0 +1,346 @@
+html {
+}
+body {
+  color: #101010;
+  font-family: nimbus, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: 'nimbus';
+  src: url('/theme/fonts/nimbussanl-bol-webfont.woff2') format('woff2'),
+  url('fonts/nimbussanl-bol-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'nimbus';
+  src: url('/theme/fonts/nimbussanl-regita-webfont.woff2') format('woff2'),
+  url('/theme/fonts/nimbussanl-regita-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+
+}
+@font-face {
+  font-family: 'nimbus';
+  src: url('/theme/fonts/nimbussanl-reg-webfont.woff2') format('woff2'),
+  url('/theme/fonts/nimbussanl-reg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'source_sans_pro';
+  font-weight: bold;
+  font-style: normal;
+  src: url('fonts/sourcesanspro-bold-webfont.eot');
+  src: url('fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+  url('fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+  url('fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+  url('fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+}
+em, i {
+  font-style: italic;
+}
+img {
+  max-width: 100%;
+}
+strong, b {
+  font-weight: bold;
+}
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+h2, h3, h4 {
+  margin-top: 1em;
+}
+h1 {
+}
+h2 {
+  font-size: 1.4em
+}	
+h3 {
+  font-size: 1.3em
+}	
+h4 {
+  font-size: 1em
+}	
+ol {
+  list-style: decimal;
+}
+p {
+}
+label.button, a.button, .button, input[type=submit] {
+  background-color: #6f983d;
+  border: 2px solid #6f983d;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.header-top {
+  align-items: center;
+  background-color: #6f983d;
+  color: #fff;
+  display: flex;
+  font-size: .8em;
+  justify-content: space-between;
+  padding: .5em 1em;
+  text-align: center;
+}
+.sm-icon {
+  background-image: url('/images/site/icons.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: none;
+  display: inline-block;
+  height: 20px;
+  margin: 5px 5px 5px 0 ;
+  text-indent: -9999px;
+  width: 20px;
+}
+.facebook {
+  background-position: 0 0;
+}
+.twitter {
+  background-position: 0 100%;
+}
+.slogan {
+  line-height: 1.2;
+  padding: 0 10px;
+}
+.phone > a {
+  border: 0;
+  color: #fff;
+  text-decoration: none;
+}
+.menu {
+  font-size: 1.2em;
+  margin-top: 1em;
+  text-align: center;
+}
+  .cta {
+    align-items: center;
+    background-color: #6f983d; 
+    border-top: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    transition: 1s ease background-color;
+  }
+  .cta, .cta:hover {
+    border-bottom: none;
+  }
+  .cta:hover {
+    background-color: #04A28D;
+    transition: 1s ease background-color;
+  }
+  .right-arrow {
+    width: 40px;
+  }
+  .right-arrow > path {
+    fill: #fff;
+  }
+  .cta-text {
+    color: #fff;
+    margin: 0 2em auto 0;
+  }
+  .cta-heading {
+    font-weight: bold;
+    line-height: 1;
+  }
+  .cta-body {
+    font-size: .9em;
+    margin-top: .5em;
+  }
+  .content {
+    /*max-width: 1000px;*/
+  }
+  .tags-content, .tag .content {
+    padding-top: 0;
+  }
+  .content:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+  .content ul, ol {
+    margin-left: 1.2em;
+  }
+  .content ul {
+    list-style-type: disc;
+  }
+  .content li {
+    margin-top: 1em;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery a {
+    border-bottom: none;
+  }
+  [src$="-icon.jpg"] {
+    width: 200px;
+  }
+  [src$="team.jpg"] {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+  .bio {
+    clear: both;
+    padding-top: 2em;
+  }
+  .bio > h2 {
+    margin-top: 0;
+  }
+  .bio > p {
+    margin-top: 0;
+  }
+  ul.post-list, ul.tag-list {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  .post-entry-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    width: 300px;
+  }
+  .post-entry {
+    padding-top: 40px;
+  }
+  .post-entry-title {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .post-entry:first-child {
+    padding-top: 0;
+  }
+  .post-entry-title > a {
+    border: none;
+  }
+  .entry-content img {
+    display: block;
+    margin: 10px;
+    width: 300px;
+  }
+  .prevnext {
+    margin-top: 1em;
+    text-align: center;
+  }
+  .prevnext > .button {
+    display: inline-block;
+    margin-top: 1em;
+  }
+  .page-footer {
+    /*background: #7d7d7d;*/
+    color: #7d7d7d;
+    font-size: .8em;
+    padding: 2em 1em 1em;
+    text-align: center;
+  }
+  .icon.facebook {
+    height: 27px;
+    margin-bottom: -2px;
+  }
+  .icon.facebook > path {
+    fill: #6f983d;
+    transition: 1s ease fill;
+  }
+  .icon {
+    display: inline-block;
+    height: 25px;
+  }
+  .icon.visa {
+    padding-right: 10px;
+  }
+  address {
+    padding: 20px 0;
+  }
+  address > span {
+    display: block;
+  }
+  address > span.divider {
+    display: none;
+  }
+  .facebook-link {
+    border: none;
+  }
+  .facebook-link:hover > .icon > path {
+    fill: #6f983d;
+    transition: 1s ease fill;
+  }
+  .james-hardie > iframe {
+    width: 100%;
+    height: 800px;
+  }
+  @media screen and (min-width: 500px) {
+    body {
+      font-size: 120%;
+    }
+    /*
+    .masthead-image[src$="_mh-sm.jpg"], .masthead-image[src$="_mh-lg.jpg"] {
+    display: none;
+    }
+    .masthead-image[src$="_mh-md.jpg"] {
+    display: block;
+    }
+     */
+}
+@media screen and (min-width: 750px) {
+  .content {
+  }
+  .post-entry {
+    clear: both;
+  }
+  .post-entry-image {
+    float: left;
+    margin: 0;
+  }
+  .post-entry-text {
+    padding-left: 350px;
+  }
+  .prevnext {
+  }
+  address > span {
+    display: inline;
+  }
+  address > span.divider {
+    display: inline;
+  }
+  [src$="team.jpg"] {
+    float: right;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .post-entry-title {
+    margin-top: 0;
+    text-align: left;
+  }
+  .entry-content img {
+    clear: right;
+    float: right;
+    margin: 0 0 1em 5em;
+  }
+  .ctas {
+    display: flex;
+  }
+  .cta {
+    border-left: 1px solid #fff;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  .cta:first-child {
+    border-left: none;
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+  <head>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    {% block head %}
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    {% block description %}{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block tags %}
+    {% endblock %}
+    {% assets filters="cssmin", output="css/style.min.css", "css/reset.css", "css/base.css", "css/main.css", "css/home.css", "css/article.css", "css/page.css", "css/header.css", "css/gallery.css" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+    {% endassets %}
+    {% if (article and article.photo_gallery) or (articles_page and articles_page.object_list[0].photo_gallery) %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/magnific-popup.css">
+    {% endif %}
+      <link rel="icon" type="image/ico" href="{{ SITEURL }}/favicon.ico">
+    {% block jquery %}
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    {% endblock jquery %}
+      <script type="text/javascript" src="/theme/js/script.js"></script>
+    {% endblock head %}
+      <style>
+      {% if page and page.slug == "home" %}
+            {% include "splash.css" %}
+      {% else %}
+            {% include "header.css" %}
+      {% endif %}
+      </style>
+  </head>
+
+  {% block body %}
+  <body>
+    {% endblock %}
+    {% block header %}
+    {#
+    <div class="header-top">
+      <div class="social-media">
+        <a href="https://www.facebook.com/Oceanside-Exteriors-1602879739937876/" class="sm-icon facebook" target="_blank" rel="noopener noreferrer">Join us on Facebook</a>
+        <a href="https://www.twitter.com" class="sm-icon twitter" target="_blank" rel="noopener noreferrer">Join us on Twitter</a>
+      </div>
+      <span class="slogan">Portland Maine's premier siding and roofing company</span>
+      <span class="phone"><a href="tel:+12076507771">207.650.7771</a></span>
+    </div>
+    #}
+    <header class="page-header">
+      <a class="logo-link" href="{{ SITEURL }}/"><img class="logo" src="/images/site/logo.png"></a>
+      <nav class="menu">
+        <!--
+          <input type="checkbox" id="menu-checkbox">
+          <label for="menu-checkbox" class="menu-heading button">Menu</label>
+        -->
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link{% if page and page.slug == "about" %} active{% endif %}" href="/about">About</a></li>
+          <li class="menu-item"><a class="menu-link{% if articles_page  or category == "projects" %} active{% endif %}" href="/projects">Projects</a></li>
+          <!--<li class="menu-item"><a class="menu-link{% if page and page.slug == "projects" %} active{% endif %}" href="/projects">Blog</a></li>-->
+          <li class="menu-item"><a class="menu-link{% if page and page.slug == "contact" %} active{% endif %}" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    {% endblock %}
+    {% block masthead %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    <footer class="page-footer">
+      <address>
+        <span class="company">Mindful&nbsp;Building</span><span class="divider"> | </span><span class="city">Portland,&nbsp;Maine</span><span class="divider"> | </span><span class="email">info@mindfulbuildingllc.com</span><span class="divider"> | </span><span class="phone">207.555.5555</span>
+      </address>
+      <a href="https://www.facebook.com/mindfulbuilder/" title="Mindful Building Facebook page" target="_blank">{% include "images/facebook.svg" %}</a>
+    </footer>
+    {% if (article and article.photo_gallery) or (articles_page and articles_page.object_list[0].photo_gallery) %}
+    <!-- Magnific Popup core JS file -->
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.magnific-popup.js"></script>
+    <script>
+      $('.gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        focus: 'img.mfp-img',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [1,2]
+        },
+        image: {
+          titleSrc: function(item) {
+            if (item.el.attr('caption') && item.el.attr('exif')) {
+              return (item.el.attr('caption').replace(/\\n/g, '<br />') +
+                '<small>' + item.el.attr('title') + ' - ' + item.el.attr('exif') + '</small>');
+            }
+            return item.el.attr('title') + '<small>' + item.el.attr('exif') + '</small>';
+          } }
+      });
+    </script>
+    {% endif %}
+  </body>
+</html>

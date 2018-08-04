@@ -1,0 +1,29 @@
+a {
+  border-bottom: #6f983d;
+  color: #6f983d;
+  text-decoration: none;
+}
+a, a:link, a:visited {
+  color: #6f983d;
+}
+h1 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding: 5px;
+  text-align: center;
+}
+.content {
+  margin: 0 auto;
+}
+.body-content {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+.body-content p {
+  margin-top: 1em;
+}
+.page-title {
+    background: #6f983d;
+}

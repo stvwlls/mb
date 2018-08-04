@@ -1,0 +1,5 @@
+title: Custom Home
+gallery: {photo}custom-home{Custom Home Gallery}
+image: {photo}custom-home/featured.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus tempus lacus, non scelerisque metus tempus id. Cras eu purus tempus, tincidunt est eu, consequat magna. Nam volutpat, massa in rutrum maximus, arcu mauris consectetur felis, sed fringilla odio lectus ac mauris. Donec iaculis eget magna eu luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In pellentesque, nibh in fermentum vulputate, leo risus congue massa, vitae mollis turpis magna vel leo. Etiam pulvinar ac mauris quis pulvinar. Etiam hendrerit elementum massa, nec pharetra tellus venenatis eget. Aliquam quis risus nibh. Duis congue eu mauris sed laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nisi est, facilisis sit amet augue vitae, pretium efficitur purus. Mauris et leo commodo, malesuada ligula quis, aliquam ligula. 

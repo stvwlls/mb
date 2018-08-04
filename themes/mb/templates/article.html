@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}{% if article.titlemeta %}{{ article.titlemeta }}{% else %}{{ article.title }}{% endif %}{%endblock%}
+{% block description %}
+{% if article.description %}
+<meta name="description" content="{{ article.description }}" />
+{% endif %}
+{% endblock %}
+{% block tags %}
+{% for tag in article.tags %}
+<meta name="tags" content="{{tag}}" />
+{% endfor %}
+{% endblock %}
+{#
+{% block masthead %}
+<div  class="masthead page {{ article.slug }}">
+  <img src="/images/mastheads/{{ article.slug }}_mh-lg.jpg" srcset="/images/mastheads/{{ article.slug }}_mh-sm.jpg 500w, /images/mastheads/{{ article.slug }}_mh-md.jpg 1000w, /images/mastheads/{{ article.slug }}_mh-lg.jpg 2000w," alt="{{ SITENAME }} {{ article.title }}">
+  <h1>{{ article.title }}</h1>
+</div>
+{% endblock %}
+#}
+{% block content %}
+<div class="content">
+  <div class="page-title">
+    <h1 class="wrapper">{{ article.title }}</h1>
+  </div>
+  <div class="body-content">
+    {{ article.content }}
+    {% if article.photo_gallery %}
+    <div class="gallery wrapper">
+      {% for title, gallery in article.photo_gallery %} 
+      {# <h1>{{ title }}</h1> #}
+      {% for name, photo, thumb, exif, caption in gallery %}
+      <a href="{{ SITEURL }}/{{ photo }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}"><img src="{{ SITEURL }}/{{ thumb }}"></a>
+      {% endfor %}
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="prevnext">
+      {% if article.prev_article %}
+      <a href="{{ SITEURL }}/{{ article.prev_article.url}}" class="button">&laquo;&nbsp;{{ article.prev_article.title }}</a>
+      {% endif %}
+      {% if article.next_article %}
+      <a href="{{ SITEURL }}/{{ article.next_article.url}}" class="button">{{ article.next_article.title }}&nbsp;&raquo;</a>
+      {% endif %}
+    </div>
+  </div><!-- /.entry-content -->
+</div>
+{% endblock %}

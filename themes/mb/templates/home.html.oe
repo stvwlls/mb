@@ -1,0 +1,11 @@
+{% extends "page.html" %}
+{% block content %}
+<div class="content page-content">
+    {{ page.content }}
+</div>
+{% for article in articles[-5:] %}
+{% endfor %}
+{% endblock %}
+{% block ctas %}
+{% include 'ctas.html' %}
+{% endblock %}

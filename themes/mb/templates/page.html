@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{% if page.titlemeta %}{{ page.titlemeta }}{% else %}{{ page.title }}{% endif %}{%endblock%}
+{% block description %}
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+{% endblock %}
+{% block body %}
+<body class="page {{ page.slug }}">
+{% endblock %}
+{% block content %}
+<div class="page-title">
+  <h1 class="wrapper">{{ page.title }}</h1>
+</div>
+<div class="content body-content">
+    {{ page.content }}
+</div>
+{% endblock %}
+{% block ctas %}
+{% include 'ctas.html' %}
+{% endblock %}

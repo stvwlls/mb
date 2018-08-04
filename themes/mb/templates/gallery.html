@@ -1,0 +1,8 @@
+{% for album, images in page.gallery.iteritems() %}
+<h2><a name="{{ album }}">{{ album }}</a></h2>
+<ul>
+    {% for image in images %}
+    <li><img src="{{ SITEURL }}/images/projects/{{album}}/{{ image }}"></a></li>
+    {% endfor %}
+</ul>
+{% endfor %}
