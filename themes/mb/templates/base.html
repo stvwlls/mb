@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block tags %}
     {% endblock %}
-    {% assets filters="cssmin", output="css/style.min.css", "css/reset.css", "css/base.css", "css/main.css", "css/home.css", "css/article.css", "css/page.css", "css/gallery.css" %}
+    {% assets filters="cssmin", output="css/style.min.css", "css/reset.css", "css/typography.css", "css/base.css", "css/main.css", "css/home.css", "css/article.css", "css/page.css", "css/gallery.css" %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
     {% if (article and article.photo_gallery) or (articles_page and articles_page.object_list[0].photo_gallery) %}
@@ -66,7 +66,7 @@
     {% endblock %}
     <footer class="page-footer">
       <address>
-        <span class="company">Mindful&nbsp;Building</span><span class="divider"> | </span><span class="city">Portland,&nbsp;Maine</span><span class="divider"> | </span><span class="email">info@mindfulbuildingllc.com</span><span class="divider"> | </span><span class="phone">207.555.5555</span>
+        <span class="company">Mindful&nbsp;Building</span><span class="divider"> | </span><span class="city">Portland,&nbsp;Maine</span><span class="divider"> | </span><span class="email">info@mindfulbuildingllc.com</span><span class="divider"> | </span><span class="phone">207.712.6787</span>
       </address>
       <a href="https://www.facebook.com/mindfulbuilder/" title="Mindful Building Facebook page" target="_blank">{% include "images/facebook.svg" %}</a>
     </footer>

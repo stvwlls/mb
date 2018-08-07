@@ -12,6 +12,7 @@
   max-width: 370px;
 }
 .splash__tagline {
+  font-size: 18px;
   margin: 20px auto;
   max-width: 700px;
   text-align: center;
@@ -24,12 +25,10 @@
   cursor: pointer;
   display: block;
   font-weight: bold;
+  font-size: 14px;
   padding: 5px 10px;
   margin: 0 auto;
   text-transform: uppercase;
-}
-.splash__tagline, .splash__button {
-  font-size: 12px;
 }
 .splash__readmore {
   text-align: center;

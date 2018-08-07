@@ -2,44 +2,9 @@ html {
 }
 body {
   color: #101010;
-  font-family: nimbus, sans-serif;
+  font-family: opensans, serif;
   line-height: 1.5;
   overflow-x: hidden;
-}
-@font-face {
-  font-family: 'nimbus';
-  src: url('/theme/fonts/nimbussanl-bol-webfont.woff2') format('woff2'),
-  url('fonts/nimbussanl-bol-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-
-}
-@font-face {
-  font-family: 'nimbus';
-  src: url('/theme/fonts/nimbussanl-regita-webfont.woff2') format('woff2'),
-  url('/theme/fonts/nimbussanl-regita-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-
-}
-@font-face {
-  font-family: 'nimbus';
-  src: url('/theme/fonts/nimbussanl-reg-webfont.woff2') format('woff2'),
-  url('/theme/fonts/nimbussanl-reg-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-@font-face {
-  font-family: 'source_sans_pro';
-  font-weight: bold;
-  font-style: normal;
-  src: url('fonts/sourcesanspro-bold-webfont.eot');
-  src: url('fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
-  url('fonts/sourcesanspro-bold-webfont.woff') format('woff'),
-  url('fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
-  url('fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
 }
 em, i {
   font-style: italic;
