@@ -7,7 +7,7 @@ Mindful Building is a construction and renovation company based in Southern Main
 
 <img alt="Patrick Landers, owner of Mindful Building" class="about__headshot" src="/images/patrick.jpg">
 
-Patrick Landers, owner and lead carpenter of Mindful Building, answers frequent questions about the company.
+Patrick Landers, Mindful Building owner and lead carpenter, answers frequent questions about the company.
 
 __How long have you been in business?__
 
