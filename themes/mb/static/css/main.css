@@ -46,6 +46,7 @@ label.button, a.button, .button, input[type=submit] {
   font-weight: bold;
   padding: 5px 10px;
   text-transform: uppercase;
+  -webkit-appearance: none;
 }
 .header-top {
   align-items: center;
@@ -165,9 +166,8 @@ label.button, a.button, .button, input[type=submit] {
   }
   .post-entry-image {
     display: block;
-    margin: 20px auto;
+    margin: 20px 0;
     max-width: 100%;
-    width: 300px;
   }
   .post-entry {
     padding-top: 40px;

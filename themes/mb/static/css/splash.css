@@ -31,6 +31,7 @@
   text-transform: uppercase;
 }
 .splash__readmore {
+  padding-bottom: 35px;
   text-align: center;
 }
 .splash__readmore-text {
@@ -47,5 +48,6 @@
 }
 .splash__readmore-button {
   display: block;
+  width: 35px;
 }
 

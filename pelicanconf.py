@@ -67,7 +67,7 @@ PHOTO_GALLERY = (1024, 768, 80)
 PHOTO_ARTICLE = (500, 500, 70)
 #	For photos associated with articles, maximum width, height, and quality. The maximum size would typically depend on the needs of the theme. 760px is suitable for the theme `notmyidea`.
 
-PHOTO_THUMB = (300, 300, 70)
+PHOTO_THUMB = (280, 280, 70)
 #	For thumbnails, maximum width, height, and quality.
 
 PHOTO_SQUARE_THUMB = True

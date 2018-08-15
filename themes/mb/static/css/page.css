@@ -18,6 +18,7 @@ form.contact > input[type=text], form.contact > input[type=email], form.contact 
   margin: 1.5em 0;
   padding: .5em;
   width: 100%;
+  -webkit-appearance: none;
 }
 form.contact > input[type=text]:first-child {
   margin-top: 0;
