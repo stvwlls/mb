@@ -42,7 +42,7 @@ ARTICLE_SAVE_AS = '{slug}/index.html'
 #CATEGORY_URL = '{slug}'
 #CATEGORY_SAVE_AS = '{slug}/index.html'
 AUTHOR_SAVE_AS = ''
-#ARTICLE_ORDER_BY = 'sort'
+ARTICLE_ORDER_BY = 'basename'
 
 # Processing
 LOAD_CONTENT_CACHE = False 

@@ -27,3 +27,7 @@ h1 {
 .page-title {
     background: #6f983d;
 }
+.footer__phone {
+  border: none;
+  text-decoration: none;
+}

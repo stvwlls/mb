@@ -3,7 +3,7 @@ SLUG: about
 TITLE: About Us
 TITLEMETA: Mindful Building is a contruction and renovation company based in Southern Maine.
 
-Mindful Building is a construction and renovation company based in Southern Maine. We build everything from simple additions to custom homes. We are versatile, highly skilled builders with over one hundred years combined experience. Mindful Building holds its clients' values and requirements in the utmost esteem. Through consciensious attention to detail and continuous communication with clients, Mindful Building makes dreams reality.
+Mindful Building is a construction and renovation company based in Southern Maine. We build everything from simple additions to custom homes. We are versatile, highly skilled builders with over one hundred years combined experience. Mindful Building holds its clients&rsquo; values and requirements in the utmost esteem. Through consciensious attention to detail and continuous communication with clients, Mindful Building makes dreams reality.
 
 <img alt="Patrick Landers, owner of Mindful Building" class="about__headshot" src="/images/patrick.jpg">
 
@@ -23,11 +23,11 @@ Following through from start to finish. Many companies have a great start but a 
 
 __What aspect of your business do you enjoy the most?__
 
-The hands-on building portion. Although I’m good with people, I am introverted at heart and love the solitude of a job site with lots to keep my hands and mind busy. It's like working meditation.
+The hands-on building portion. Although I&rsquo;m good with people, I am introverted at heart and love the solitude of a job site with lots to keep my hands and mind busy. It's like working meditation.
 
 __Why should I choose your company over your competitors?__
 
-I really can’t say why anyone should choose us over someone else. Southern Maine is full of amazing tradesmen and we are just some of many. I primarily want to be chosen by clients that feel there is alignment with our beliefs and approach.
+I really can&rsquo;t say why anyone should choose us over someone else. Southern Maine is full of amazing tradesmen and we are just some of many. I primarily want to be chosen by clients that feel there is alignment with our beliefs and approach.
 
 __Where is your company based? What areas do you service?__
 

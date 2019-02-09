@@ -80,9 +80,6 @@ label.button, a.button, .button, input[type=submit] {
   padding: 0 10px;
 }
 .phone > a {
-  border: 0;
-  color: #fff;
-  text-decoration: none;
 }
   .cta {
     align-items: center;
