@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/OpenSans-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/OpenSans-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
