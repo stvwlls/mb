@@ -189,6 +189,7 @@ label.button, a.button, .button, input[type=submit] {
   }
   .prevnext > .button {
     display: inline-block;
+    font-size: .9em;
     margin-top: 1em;
   }
   .page-footer {

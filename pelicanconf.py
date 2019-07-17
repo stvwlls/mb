@@ -75,33 +75,3 @@ PHOTO_SQUARE_THUMB = True
 
 PHOTO_RESIZE_JOBS = 5
 # Number of parallel resize jobs to be run. Defaults to 1.
-
-#GALLERY_PATH = 'images/projects'
-
-# Thumbnailer (wxh, wx?, ?xh, s(w=h))
-
-#IMAGE_PATH = 'images/projects'
-#THUMBNAIL_DIR = 'images/projects'
-#THUMBNAIL_KEEP_TREE = True
-#THUMBNAIL_KEEP_NAME = True
-#THUMBNAIL_SIZES = {
-#    #'sm': '400x400',
-#    'medium': '300x?',
-#}
-
-#IMAGE_PATH = 'images/mastheads/interior'
-#THUMBNAIL_DIR = 'images/mastheads'
-#THUMBNAIL_SIZES = {
-#    'mh-sm': '500x400',
-#    'mh-md': '1000x500',
-#    'mh-lg': '2000x450',
-#}
-
-#IMAGE_PATH = 'images/mastheads/home'
-#THUMBNAIL_DIR = 'images/mastheads'
-#THUMBNAIL_SIZES = {
-#    'mh-sm': '500x400',
-#    'mh-md': '1000x600',
-#    'mh-lg': '2000x600',
-#}
-

@@ -1,5 +1,5 @@
 title: Portland Apartment Building
-gallery: {photo}turner-street/exterior{Turner Street, exterior},{photo}turner-street/unit-1{Turner Street, Unit 1},{photo}turner-street/unit-2{Turner Street, Unit 2}, {photo}turner-street/unit-3{Turner Street, Unit 3} 
+gallery: {photo}turner-street/exterior{Turner Street, exterior},{photo}turner-street/interior_general{Turner Street, General Interior},{photo}turner-street/interior_kitchen-bathroom-bedroom{Turner Street, Interior Rooms}
 image: {photo}featured/turner-street.jpg
 summary: We completed a comprehensive renovation of an existing 1900’s three-unit home located in a progressive neighborhood on Munjoy Hill in Portland. This project was for a real estate investor and developer. The project was a complete gut from basement to roof, preserving only the original exterior walls and foundation.
 
