@@ -50,6 +50,7 @@
 }
 .splash__content {
     margin: 10px;
+    top: -10%;
 }
 .splash__tagline {
     color: #fff;
