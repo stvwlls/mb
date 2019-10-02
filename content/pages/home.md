@@ -4,7 +4,7 @@ SLUG: home
 TEMPLATE: home
 TITLE: Mindful Building
 TITLEMETA: Mindful Building: Contruction and renovation services in Southern Maine
-SPLASH_TAGLINE: Construction and rennovation solutions for the discriminating&nbsp;homeowner
+SPLASH_TAGLINE: Construction and rennovation solutions for the discriminating homeowner
 SPLASH_BUTTON: Contact us for a free estimate
 SPLASH_LINK: Read more
 
