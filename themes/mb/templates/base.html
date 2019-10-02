@@ -22,10 +22,9 @@
       <script type="text/javascript" src="/theme/js/script.js"></script>
     {% endblock head %}
       <style>
+      {% include "header.css" %}
       {% if page and page.slug == "home" %}
           {% include "splash.css" %}
-      {% else %}
-          {% include "header.css" %}
       {% endif %}
       </style>
   </head>

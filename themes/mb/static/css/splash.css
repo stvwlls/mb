@@ -1,53 +1,94 @@
 .splash {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100vh;
-  margin: 20px;
+    background-image: url(/images/site/hp-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
 }
+.splash {
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     */
+}
+.splash__overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,.3);
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.splash__header {
+}
+.splash__header, .splash__content, .splash__readmore {
+    position: relative;
+    z-index: 100;
+}
+/*
 .splash__logo-link {
-  border-bottom: none;
-  display: block;
-  margin: 0 auto;
-  max-width: 370px;
+    border-bottom: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 370px;
+}
+.splash__content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+*/
+.menu-link.home {
+    color: #fff;
+    font-weight: bold;
+}
+.splash__content {
+    padding-top: 90px;
 }
 .splash__tagline {
-  font-size: 18px;
-  margin: 20px auto;
-  max-width: 700px;
-  text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
 }
 .splash__button {
-  background-color: #6f983d;
-  border: 2px solid #6f983d;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 5px 10px;
-  margin: 0 auto;
-  text-transform: uppercase;
+    background-color: #6f983d;
+    border: 2px solid #6f983d;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
 }
 .splash__readmore {
-  padding-bottom: 35px;
-  text-align: center;
+    padding-bottom: 35px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }
 .splash__readmore-text {
-  color: silver;
-  margin: .3em;
+    color: silver;
+    margin: .3em;
 }
 .splash__readmore path {
-  fill: silver;
+    fill: silver;
 }
 .splash__readmore-link {
-  border: none;
-  display: inline-block;
-  text-decoration: none;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
 }
 .splash__readmore-button {
-  display: block;
-  width: 35px;
+    display: block;
+    width: 35px;
 }
 

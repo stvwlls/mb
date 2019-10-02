@@ -3,28 +3,39 @@
 {% endblock %}
 {% block content %}
 <div class="splash">
-  <div class="splash__content">
-    <a class="splash__logo-link" href="{{ SITEURL }}/"><img class="logo" src="/images/site/logo.png"></a>
-    <div class="splash__cta">
-      <p class="splash__tagline">{{ page.splash_tagline }}</p>
-      <a href="/contact/" title="Contact Mindful Building"><button class="splash__button button">{{ page.splash_button }}</button></a>
+    <div class="splash__overlay"></div>
+    <div class="page-header splash__header">
+        <a class="logo-link splash__logo-link" href="{{ SITEURL }}/"><img class="logo" src="/images/site/logo.png"></a>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-link home" href="/about">About</a></li>
+                <li class="menu-item"><a class="menu-link home" href="/projects">Projects</a></li>
+                <li class="menu-item"><a class="menu-link home" href="/contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </div>
-  <div class="splash__readmore">
-    <a class="splash__readmore-link" href="#main-content"><svg class="splash__readmore-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M 22,12 C 22,17.514 17.514,22 12,22 6.486,22 2,17.514 2,12 2,6.486 6.486,2 12,2 17.514,2 22,6.486 22,12 Z m 2,0 C 24,5.373 18.627,0 12,0 5.373,0 0,5.373 0,12 0,18.627 5.373,24 12,24 18.627,24 24,18.627 24,12 Z M 12,14 7.5,9.5 6,11.027 12,17 18,11.027 16.5,9.5 Z"/></svg></a> </div>
+        <div class="splash__content">
+            <div class="splash__cta">
+                <p class="splash__tagline">{{ page.splash_tagline }}</p>
+                <a href="/contact/" title="Contact Mindful Building"><button class="splash__button button">{{ page.splash_button }}</button></a>
+            </div>
+        </div>
+        <div class="splash__readmore">
+            <a class="splash__readmore-link" href="#main-content"><svg class="splash__readmore-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M 22,12 C 22,17.514 17.514,22 12,22 6.486,22 2,17.514 2,12 2,6.486 6.486,2 12,2 17.514,2 22,6.486 22,12 Z m 2,0 C 24,5.373 18.627,0 12,0 5.373,0 0,5.373 0,12 0,18.627 5.373,24 12,24 18.627,24 24,18.627 24,12 Z M 12,14 7.5,9.5 6,11.027 12,17 18,11.027 16.5,9.5 Z"/></svg></a>
+        </div>
 </div>
 <div class="home__page-content" id="main-content">
-  <div class="home__content">
-    {{ page.content }}
-  </div>
+    <div class="home__content">
+        {{ page.content }}
+    </div>
 </div>
 <h2 class="home__subheading">Check out our recent projects</h2>
 <div class="project-ctas">
-{% for article in articles[-5:] %}
-  <a class="project-cta" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-    {% if article.photo_image %}<img class="project-cta__image" src="{{ SITEURL }}/{{ article.photo_image[2] }}" />{% endif %}
-    <span class="project-cta__title">{{ article.title }}</span>
-  </a>
-{% endfor %}
+    {% for article in articles[-5:] %}
+    <a class="project-cta" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+        {% if article.photo_image %}<img class="project-cta__image" src="{{ SITEURL }}/{{ article.photo_image[1] }}" />{% endif %}
+        <span class="project-cta__title">{{ article.title }}</span>
+    </a>
+    {% endfor %}
 </div>
 {% endblock %}

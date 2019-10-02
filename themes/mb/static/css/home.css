@@ -40,7 +40,7 @@
 .project-cta {
   border-bottom: none;
   display: block;
-  margin: 5px;
+  margin: 10px;
   position: relative;
 }
 .project-cta:hover .project-cta__title {
@@ -55,7 +55,7 @@
   bottom: 0;
   color: #fff;
   display: block;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   left: 0;
   padding: 5px;
@@ -84,6 +84,5 @@
     font-size: 1.8em;
   }
   .project-ctas {
-    flex-wrap: nowrap;
   }
 }
