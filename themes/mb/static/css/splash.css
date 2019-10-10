@@ -60,7 +60,7 @@
     max-width: 700px;
     text-align: center;
 }
-.splash__button {
+.splash__button, .contact__button {
     background-color: #6f983d;
     border: 2px solid #6f983d;
     border-radius: 5px;
@@ -68,10 +68,15 @@
     cursor: pointer;
     display: block;
     font-weight: bold;
-    font-size: 14px;
     padding: 5px 10px;
     margin: 0 auto;
     text-transform: uppercase;
+}
+.splash__button {
+    font-size: 16px;
+}
+.contact__button {
+    font-size: 14px;
 }
 .splash__readmore {
     padding-bottom: 35px;
@@ -92,10 +97,13 @@
 }
 .splash__readmore-button {
     display: block;
-    width: 35px;
+    width: 60px;
 }
 @media only screen and (min-width: 620px) {
     .splash__tagline {
         font-size: 30px;
+    }
+    .splash__button {
+        font-size: 20px;
     }
 }

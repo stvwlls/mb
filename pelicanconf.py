@@ -64,8 +64,10 @@ PHOTO_LIBRARY = "~/web/images/mb"
 PHOTO_GALLERY = (1024, 768, 80)
 #	For photos in galleries, maximum width and height, plus JPEG quality as a percentage. This would typically be the size of the photo displayed when the reader clicks a thumbnail.
 
-PHOTO_ARTICLE = (500, 500, 70)
+PHOTO_ARTICLE = (500, 375, 70)
 #	For photos associated with articles, maximum width, height, and quality. The maximum size would typically depend on the needs of the theme. 760px is suitable for the theme `notmyidea`.
+
+PHOTO_SQUARE_ARTICLE = True
 
 PHOTO_THUMB = (280, 280, 70)
 #	For thumbnails, maximum width, height, and quality.
