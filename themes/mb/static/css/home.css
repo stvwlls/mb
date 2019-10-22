@@ -4,7 +4,7 @@
   font-size: .7em;
 }
 .home__page-content {
-  background-color: #6f983d;
+  background-color: #333;
   color: #fff;
   font-size: .9em;
   padding-top: .5em;
@@ -29,8 +29,9 @@
 }
 .home__subheading {
   font-size: 1.2em;
-  margin: 20px;
+  margin: 1.8em 20px 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 .hp-cta-wrapper {
     margin: 0 20px;
@@ -52,7 +53,7 @@
   border: 2px solid #7f7f7f;
   box-shadow: 10px 5px 5px gray;
   display: block;
-  margin: 10px auto;
+  margin: 15px auto;
   max-width: 500px;
 }
 .project-cta:hover {
@@ -106,7 +107,8 @@
   }
   */
   .home__subheading {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    margin: 3em 20px 20px;
   }
   .project-ctas {
   }
